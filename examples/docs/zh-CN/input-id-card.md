@@ -9,7 +9,7 @@
 
 <script>
 // 正确的import方式
-// import {InputIdCard} from '@femessage/element-ui'
+// import {InputIdCard} from '@upgrade-frontend/element-ui'
 const ElInputIdCard = require('element-ui/packages/input-id-card/src/main.vue').default
 export default {
   data() {

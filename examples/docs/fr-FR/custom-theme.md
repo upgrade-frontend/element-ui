@@ -21,15 +21,15 @@ Le site précédent vous permet de visualiser et de télécharger un nouveau th�
 $--color-primary: teal;
 
 /* chemin vers le fichier de police, requis */
-$--font-path: '~@femessage/element-ui/lib/theme-chalk/fonts';
+$--font-path: '~@upgrade-frontend/element-ui/lib/theme-chalk/fonts';
 
-@import "~@femessage/element-ui/packages/theme-chalk/src/index";
+@import "~@upgrade-frontend/element-ui/packages/theme-chalk/src/index";
 ```
 
 Puis dans le fichier d'entrée, importez ce style au lieu de celui d'Element:
 ```JS
 import Vue from 'vue'
-import Element from '@femessage/element-ui'
+import Element from '@upgrade-frontend/element-ui'
 import './element-variables.scss'
 
 Vue.use(Element)
@@ -109,7 +109,7 @@ Importing your own theme is just like importing the default theme, only this tim
 
 ```javascript
 import '../theme/index.css'
-import ElementUI from '@femessage/element-ui'
+import ElementUI from '@upgrade-frontend/element-ui'
 import Vue from 'vue'
 
 Vue.use(ElementUI)

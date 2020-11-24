@@ -3,9 +3,9 @@
 </p>
 
 [![Build Status](https://badgen.net/travis/FEMessage/element/master)](https://travis-ci.com/FEMessage/element)
-[![NPM Download](https://badgen.net/npm/dm/@femessage/element-ui)](https://www.npmjs.com/package/@femessage/element-ui)
-[![NPM Version](https://badgen.net/npm/v/@femessage/element-ui)](https://www.npmjs.com/package/@femessage/element-ui)
-[![NPM License](https://badgen.net/npm/license/@femessage/element-ui)](https://github.com/FEMessage/element/blob/master/LICENSE)
+[![NPM Download](https://badgen.net/npm/dm/@upgrade-frontend/element-ui)](https://www.npmjs.com/package/@upgrade-frontend/element-ui)
+[![NPM Version](https://badgen.net/npm/v/@upgrade-frontend/element-ui)](https://www.npmjs.com/package/@upgrade-frontend/element-ui)
+[![NPM License](https://badgen.net/npm/license/@upgrade-frontend/element-ui)](https://github.com/FEMessage/element/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/FEMessage/element/pulls)
 [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
 
@@ -13,16 +13,16 @@
 
 ## Install
 ```shell
-npm install @femessage/element-ui -S
+npm install @upgrade-frontend/element-ui -S
 
 #or
-yarn add @femessage/element-ui
+yarn add @upgrade-frontend/element-ui
 ```
 
 ## Quick Start
 ``` javascript
 import Vue from 'vue'
-import Element from '@femessage/element-ui'
+import Element from '@upgrade-frontend/element-ui'
 
 Vue.use(Element)
 
@@ -31,7 +31,7 @@ import {
   Select,
   Button
   // ...
-} from '@femessage/element-ui'
+} from '@upgrade-frontend/element-ui'
 
 Vue.component(Select.name, Select)
 Vue.component(Button.name, Button)

@@ -11,7 +11,7 @@
 
 <script>
 // 正确import方式
-// import {ElInputEmail} from '@femessage/element-ui'
+// import {ElInputEmail} from '@upgrade-frontend/element-ui'
 const ElInputEmail = require('element-ui/packages/input-email/src/main.vue').default
 export default {
   data() {
@@ -44,7 +44,7 @@ export default {
 
 <script>
 // 正确import方式
-// import {ElInputEmal} from '@femessage/element-ui'
+// import {ElInputEmal} from '@upgrade-frontend/element-ui'
 const ElInputEmail = require('element-ui/packages/input-email/src/main.vue').default
 export default {
   data() {

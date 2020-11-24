@@ -10,13 +10,13 @@ npm i element-ui -S
 
 ### CDN
 
-Get the latest version from [unpkg.com/element-ui](https://unpkg.com/@femessage/element-ui/) , and import JavaScript and CSS file in your page.
+Get the latest version from [unpkg.com/element-ui](https://unpkg.com/@upgrade-frontend/element-ui/) , and import JavaScript and CSS file in your page.
 
 ```html
 <!-- import CSS -->
-<link rel="stylesheet" href="https://unpkg.com/@femessage/element-ui/lib/theme-chalk/index.css">
+<link rel="stylesheet" href="https://unpkg.com/@upgrade-frontend/element-ui/lib/theme-chalk/index.css">
 <!-- import JavaScript -->
-<script src="https://unpkg.com/@femessage/element-ui/lib/index.js"></script>
+<script src="https://unpkg.com/@upgrade-frontend/element-ui/lib/index.js"></script>
 ```
 
 :::tip

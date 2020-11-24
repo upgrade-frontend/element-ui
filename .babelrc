@@ -31,7 +31,7 @@
         ["module-resolver", {
           "root": ["element-ui"],
           "alias": {
-            "element-ui/src": "@femessage/element-ui/lib"
+            "element-ui/src": "@upgrade-frontend/element-ui/lib"
           }
         }]
       ]

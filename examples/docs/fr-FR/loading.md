@@ -175,7 +175,7 @@ Affichez une animation en plein écran quand vous charger des données.
 Vous pouvez invoquer Loading comme un service. Importez le service Loading:
 
 ```javascript
-import { Loading } from '@femessage/element-ui';
+import { Loading } from '@upgrade-frontend/element-ui';
 ```
 Et invoquer-le:
 

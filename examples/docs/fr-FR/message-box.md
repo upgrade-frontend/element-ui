@@ -290,7 +290,7 @@ Si Element est importé entièrement, il ajoutera les méthodes suivantes à Vue
 Si vous préférer importer `MessageBox` à la demande:
 
 ```javascript
-import { MessageBox } from '@femessage/element-ui';
+import { MessageBox } from '@upgrade-frontend/element-ui';
 ```
 
 Les méthodes correspondantes sont: `MessageBox`, `MessageBox.alert`, `MessageBox.confirm` et `MessageBox.prompt`. Les paramètres sont les mêmes que précédemment.
