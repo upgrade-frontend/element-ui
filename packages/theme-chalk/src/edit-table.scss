@@ -1,0 +1,37 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(edit-table) {
+  .el-table td, .el-table th{
+    .required{
+      color: $--color-danger;
+    }
+  }
+  .el-table__body {
+    td, th{
+      padding-bottom: 0;
+    }
+  }
+  &.el-edit-table-readonly{
+    .el-table__body {
+      td, th{
+        padding-top: 0;
+      }
+    }
+    .form-input.form-input--readonly{
+      margin-bottom: 0px;
+    }
+  }
+  .el-form-item__error{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .danger-button{
+    color: $--color-danger;
+    &.is-disabled {
+      color: $--disabled-color-base;
+    }
+  }
+}

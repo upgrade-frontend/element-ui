@@ -1,0 +1,56 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(timeline) {
+  margin: 0;
+  font-size: $--font-size-base;
+  list-style: none;
+
+  &.is-horizontal{
+    display: flex;
+
+    & > .el-timeline-item{
+      & > .el-timeline-item__wrapper{
+        text-align:center;
+      }
+    }
+
+    & > .el-timeline-item:first-child{
+      .el-timeline-item__wrapper{
+        & > .el-timeline-item__horizontal{
+          & > {
+            .el-timeline-item__tail{
+              width: calc(50% + 20px + 28px);
+              left: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    & .el-timeline-item:last-child {
+      .el-timeline-item__wrapper{
+        & > .el-timeline-item__horizontal{
+          & > {
+            .el-timeline-item__tail{
+              width: 50%;
+            }
+          }
+        }
+      }
+
+      & .el-timeline-item__tail {
+        display: block;
+      }
+    }
+  }
+
+  &.is-vertical{
+    & .el-timeline-item.is-vertical:last-child {
+    & .el-timeline-item__tail {
+      display: none;
+    }
+  }
+  }
+  
+}
