@@ -1,6 +1,6 @@
 {
   "name": "@upgrade-frontend/element-ui",
-  "version": "2.12.0",
+  "version": "1.0.0",
   "description": "A Component Library for Vue.js.",
   "main": "lib/element-ui.common.js",
   "files": [
@@ -50,9 +50,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:femessage/element.git"
+    "url": "git+https://github.com/upgrade-frontend/element-ui"
   },
-  "homepage": "http://femessage.github.io/element/",
   "keywords": [
     "eleme",
     "vue",
@@ -60,7 +59,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/femessage/element/issues"
+    "url": "https://github.com/upgrade-frontend/element/issues"
   },
   "unpkg": "lib/index.js",
   "style": "lib/theme-chalk/index.css",

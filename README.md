@@ -1,12 +1,12 @@
+## element-ui 增强版临时包，目前新增有tree组件的虚拟滚动，待完善功能后会合入element-ui主分支中
 <p align="center">
   <img src="https://cdn.rawgit.com/ElemeFE/element/dev/element_logo.svg">
 </p>
 
-[![Build Status](https://badgen.net/travis/FEMessage/element/master)](https://travis-ci.com/FEMessage/element)
 [![NPM Download](https://badgen.net/npm/dm/@upgrade-frontend/element-ui)](https://www.npmjs.com/package/@upgrade-frontend/element-ui)
 [![NPM Version](https://badgen.net/npm/v/@upgrade-frontend/element-ui)](https://www.npmjs.com/package/@upgrade-frontend/element-ui)
-[![NPM License](https://badgen.net/npm/license/@upgrade-frontend/element-ui)](https://github.com/FEMessage/element/blob/master/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/FEMessage/element/pulls)
+[![NPM License](https://badgen.net/npm/license/@upgrade-frontend/element-ui)](https://github.com/upgrade-frontend/element-ui/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/upgrade-frontend/element-ui/pulls)
 [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
 
 ---
@@ -36,7 +36,6 @@ import {
 Vue.component(Select.name, Select)
 Vue.component(Button.name, Button)
 ```
-For more information, please refer to [Quick Start](http://femessgae.github.io/#/zh-CN/component/quickstart) in our documentation.
 
 ## Generate Theme
 ```sh
@@ -56,7 +55,7 @@ sh ./publish-theme.sh
 # now a new theme publish to npm for your own
 ```
 
-The reason to checkout from branch `only-component`, can be found in [Contributing Guide](https://github.com/femessage/element/blob/master/.github/CONTRIBUTING.zh-CN.md)
+The reason to checkout from branch `only-component`, can be found in [Contributing Guide](https://github.com/upgrade-frontend/element-ui/blob/master/.github/CONTRIBUTING.zh-CN.md)
 
 ## Development
 ```sh
@@ -107,14 +106,13 @@ yarn test
 ```
 
 ## Contribution
-Please make sure to read the [Contributing Guide](https://github.com/femessage/element/blob/master/.github/CONTRIBUTING.zh-CN.md) before making a pull request.
+Please make sure to read the [Contributing Guide](https://github.com/upgrade-frontend/element-ui/blob/master/.github/CONTRIBUTING.zh-CN.md) before making a pull request.
 
 ## Browser Support
 Modern browsers and Internet Explorer 10+.
 
 ## Links
-- [Documentation](https://femessage.github.io/element)
-- [ChangeLog](https://github.com/FEMessage/element/releases)
+- [ChangeLog](https://github.com/upgrade-frontend/element-ui/releases)
 
 ## LICENSE
 [MIT](LICENSE)
