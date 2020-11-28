@@ -12,7 +12,7 @@
       :data-key="getVirtualNodeKey"
       :data-sources="visibleList"
       :data-component="itemComponent"
-      :keeps="Math.ceil(height / 22) + extraLine"
+      :keeps="Math.ceil(height / itemHeight) + extraLine"
       :extra-props="{
         renderAfterExpand,
         showCheckbox,
@@ -146,6 +146,10 @@
       height: {
         type: Number,
         default: 0
+      },
+      itemHeight: {
+        type: Number,
+        default: 26
       },
       extraLine: {
         type: Number,
