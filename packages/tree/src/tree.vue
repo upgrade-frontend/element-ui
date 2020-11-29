@@ -7,7 +7,7 @@
       'is-drop-inner': dragState.dropType === 'inner'
     }"
     role="tree">
-    <virtual-list v-if="virtualScroll && height"
+    <virtual-list v-if="virtualScroll && height > 0"
       :style="{ height: height + 'px', 'overflow-y': 'auto' }"
       :data-key="getVirtualNodeKey"
       :data-sources="visibleList"
