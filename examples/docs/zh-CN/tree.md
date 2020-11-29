@@ -864,6 +864,7 @@
 | allow-drop            | 拖拽时判定目标节点能否被放置。`type` 参数有三种情况：'prev'、'inner' 和 'next'，分别表示放置在目标节点前、插入至目标节点和放置在目标节点后 | Function(draggingNode, dropNode, type)  | —    | —     |
 | height                  | 设置虚拟滚动容器高度，设置后自动启动虚拟容器           | number                     | —    | 0 |
 | item-height                  | 子元素高度           | number                     | —    | 26 |
+| virtual-scroll                 | 是否支持虚拟滚动           | boolean                     | —    | false |
 | extra-line                  | 容器外数据数目，需与 height 方法结合使用           | number                     | —    | 8 |
 
 ### props

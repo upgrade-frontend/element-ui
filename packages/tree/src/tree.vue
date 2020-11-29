@@ -7,7 +7,7 @@
       'is-drop-inner': dragState.dropType === 'inner'
     }"
     role="tree">
-    <virtual-list v-if="height"
+    <virtual-list v-if="virtualScroll && height"
       :style="{ height: height + 'px', 'overflow-y': 'auto' }"
       :data-key="getVirtualNodeKey"
       :data-sources="visibleList"
@@ -61,6 +61,7 @@
     },
 
     data() {
+
       return {
         store: null,
         root: null,
@@ -143,6 +144,10 @@
         default: 18
       },
       iconClass: String,
+      virtualScroll: {
+        type: Boolean,
+        default: false
+      },
       height: {
         type: Number,
         default: 0
@@ -178,7 +183,7 @@
 
       visibleList() {
         const list = this.flattenTree(this.root.childNodes);
-
+  
         return list.map(item=>item);
       }
     },

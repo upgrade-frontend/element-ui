@@ -87,8 +87,16 @@ export default {
       if (this.expanded) {
         this.tree.$emit('node-collapse', node.data, node, this);
         node.collapse();
+        if (this.tree && this.tree.virtualScroll) {
+          this.source && this.source.collapse();
+        }
       } else {
         node.expand();
+        if (this.tree && this.tree.virtualScroll) {
+          this.source && this.source.expand();
+          this.broadcast('ElTreeNode', 'tree-node-expand', node);
+          this.tree.$emit('node-expand', node.data, node, this);
+        }
         this.$emit('node-expand', node.data, node, this);
       }
     },
