@@ -8,9 +8,10 @@ import Message from '../packages/message/index.js';
 import InfiniteScroll from '../packages/infinite-scroll/index.js';
 import MessageBoxCenter from '../packages/message-box-center/index.js';
 import locale from 'element-ui/src/locale';
-
+import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
 const components = [
-  Tree
+  Tree,
+  CollapseTransition
 ];
 
 const install = (Vue, opts = {}) => {
@@ -48,5 +49,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   version: '2.12.0',
   install,
-  Tree
+  Tree,
+  CollapseTransition
 };
