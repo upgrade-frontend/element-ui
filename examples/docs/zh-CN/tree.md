@@ -799,7 +799,7 @@
 **注意：当启动虚拟滚动后，懒加载、可拖拽节点功能将失效**
 :::demo
 ```html
-<el-tree :data="data" nodeKey="key" :props="defaultProps" default-expand-all :height="300" show-checkbox />
+<el-tree :data="data" nodeKey="key" :props="defaultProps" :virtual-scroll="true" default-expand-all :height="300" show-checkbox />
 
 <script>
   export default {

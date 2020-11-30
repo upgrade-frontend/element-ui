@@ -790,7 +790,7 @@ Use virtual list through `height` prop.
 **WARNING：The draggable and lazy mode will be invalid when use virtual list**
 :::demo
 ```html
-<el-tree :data="data" nodeKey="key" :props="defaultProps" default-expand-all :height="300" show-checkbox />
+<el-tree :data="data" nodeKey="key" :props="defaultProps" :virtual-scroll="true" default-expand-all :height="300" show-checkbox />
 
 <script>
   export default {
@@ -854,6 +854,8 @@ Use virtual list through `height` prop.
 | allow-drag            | this function will be executed before dragging a node. If `false` is returned, the node can not be dragged | Function(node)  | —  | —  |
 | allow-drop            | this function will be executed before the dragging node is dropped. If `false` is returned, the dragging node can not be dropped at the target node. `type` has three possible values: 'prev' (inserting the dragging node before the target node), 'inner' (inserting the dragging node to the target node) and 'next' (inserting the dragging node after the target node) | Function(draggingNode, dropNode, type)  | —    | —     |
 | height                  | Config virtual scroll height           | number                     | —    | 0 |
+| item-height                  | sub item height           | number                     | —    | 26 |
+| virtual-scroll                 | enable virtual scroll          | boolean                     | —    | false |
 | extra-line                  | Set item count under(without) the virtual container           | number                     | —    | 8 |
 
 ### props

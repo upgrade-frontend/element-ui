@@ -1,4 +1,6 @@
 ## element-ui 增强版临时包，目前新增有tree组件的虚拟滚动，待完善功能后会合入element-ui主分支中
+## element-ui Enhanced version of the temporary package, currently added to the tree component of virtual scrolling, to be improved after the function will be merged into the main branch of element ui
+
 <p align="center">
   <img src="https://cdn.rawgit.com/ElemeFE/element/dev/element_logo.svg">
 </p>
@@ -20,23 +22,35 @@ yarn add @upgrade-frontend/element-ui
 ```
 
 ## Quick Start
-``` javascript
-import Vue from 'vue'
-import Element from '@upgrade-frontend/element-ui'
+> 目前element-ui引入时候入口文件中只打入了Tree组件，所以如果混着用的话建议如下
 
-Vue.use(Element)
+> At present, when the element ui is introduced, only the tree component is entered into the entry file. Therefore, if the element UI is mixed, the following suggestions are made
 
-// or
-import {
-  Select,
-  Button
-  // ...
-} from '@upgrade-frontend/element-ui'
+```javascript
+import Vue from "vue"
+import { Input, Button} from "element-ui"
+// tree组件单独引入
+import { Tree } from "@upgrade-frontend/element-ui"
+// 因为Tree单独引入，upgrade-frontend/element-ui暂时不支持按需加载样式，所以Tree样式也需要单独引入样式
+import "element-ui/lib/theme-chalk/tree.css"
 
-Vue.component(Select.name, Select)
-Vue.component(Button.name, Button)
+Vue.use(Tree) // 使用@upgrade-frontend/element-ui的tree组件
+Vue.use(Input) // 使用element-ui的Input和Button组件
+Vue.use(Button)
+
 ```
+```javascript
+Tree组件新增3个参数，同时传`height`和`virtual-scroll`=true，则开启虚拟滚动
+// height：设置虚拟滚动容器高度，设置后自动启动虚拟容器 | number | 0 |
+// item-height: 子元素高度 | number| 26 |
+// virtual-scroll: 是否支持虚拟滚动 | boolean | false |
 
+
+Three new parameters are added to the tree component, and 'height' and 'virtual scroll' = true are passed at the same time to enable virtual scrolling
+// height：Set the height of virtual rolling container, and start the virtual container automatically after setting | number | 0 |
+// item-height: Sub element height | number| 26 |
+// virtual-scroll: enable virtual scrolling | boolean | false |
+```
 ## Generate Theme
 ```sh
 # fork this repository
